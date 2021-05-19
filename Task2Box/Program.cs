@@ -47,7 +47,7 @@ namespace Task2Box
                 }
             }
             Console.WriteLine("Для повторной игры нажмите 1");
-            int option = Console.Read();
+            int option = int.Parse(Console.ReadLine());
             if (option == 1)
             {
                 goto Begin;
