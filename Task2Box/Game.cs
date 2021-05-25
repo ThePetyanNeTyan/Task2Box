@@ -61,7 +61,8 @@ namespace Task2Box
                     Console.Write($"Ход игрока  {_playerOne} - ");
                     int chooseOne = _playerOne.MakeStep();
                     _randomNumber = _randomNumber - chooseOne;
-                    Console.WriteLine(_randomNumber);
+                Console.WriteLine("Ввел число " + chooseOne);
+                Console.WriteLine(_randomNumber);
                 if (_randomNumber <= 0)
                 {
                     Console.WriteLine("Победил игрок " + _playerOne.ToString());
@@ -71,6 +72,7 @@ namespace Task2Box
                     Console.Write($"Ход игрока  {_playerTwo} - ");
                     int chooseTwo = _playerTwo.MakeStep();                  
                     _randomNumber = _randomNumber - chooseTwo;
+                    Console.WriteLine("Ввел число " + chooseTwo);
                     Console.WriteLine(_randomNumber);
                 if (_randomNumber <= 0)
                 {
